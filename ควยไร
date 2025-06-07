@@ -364,7 +364,7 @@ do
 		end
 	end
 
-	Net.include = setmetatable({}, {__call = function(self, studio: syn)
+	Net.include = function(studio: syn)
 		if type(studio) == 'string' then
 			LocalPlayer.CharacterAdded:Connect(function(newCharacter: Instance)
 				Character = newCharacter;
