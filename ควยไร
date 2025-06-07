@@ -385,7 +385,7 @@ do
 		else
 			while true do end
 		end
-	end})
+	end
 
 	Net.round = function(n: number)
 		return math.floor(tonumber(n) + 1)
@@ -663,4 +663,4 @@ do
 	end)
 end
 
-return {Net;C;Env;Configs;Window;translate;}
+--return {Net;C;Env;Configs;Window;translate;}
