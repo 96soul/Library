@@ -155,13 +155,13 @@ Tog = function(p, frame, bn, i)
 	CloseUI.BorderSizePixel = 0
 	CloseUI.Position = UDim2.new(0.5, 0,0.2, 0)
 	CloseUI.Size = UDim2.new(0, 50,0, 50)
-	CloseUI.BackgroundTransparency = 0.35
+	CloseUI.BackgroundTransparency = 0
 	CloseUI.Text = ""
 
 	lak(CloseUI)
 
 	UICorner_1z.Parent = CloseUI
-	UICorner_1z.CornerRadius = UDim.new(0,5)
+	UICorner_1z.CornerRadius = UDim.new(1,0)
 
 	Icon_1.Name = "Icon"
 	Icon_1.Parent = CloseUI
@@ -178,7 +178,7 @@ Tog = function(p, frame, bn, i)
 	ImageLabel.BorderColor3 = Color3.fromRGB(0,0,0)
 	ImageLabel.BorderSizePixel = 0
 	ImageLabel.Position = UDim2.new(0.5, 0,0.5, 0)
-	ImageLabel.Size = UDim2.new(0, 45,0, 45)
+	ImageLabel.Size = UDim2.new(0, 35,0, 35)
 	ImageLabel.Image = GetIcon(i)
 	ImageLabel.ImageTransparency = 0
 
@@ -189,7 +189,7 @@ Tog = function(p, frame, bn, i)
 				t = 0.2,
 				s = "Back",
 				d = "Out",
-				g = {Size = UDim2.new(0, 35, 0, 35)}
+				g = {Size = UDim2.new(0, 20, 0, 20)}
 			}):Play()
 			task.wait(0.016) 
 			tw({
@@ -197,7 +197,7 @@ Tog = function(p, frame, bn, i)
 				t = 0.2,
 				s = "Back",
 				d = "Out",
-				g = {Size = UDim2.new(0, 45, 0, 45)}
+				g = {Size = UDim2.new(0, 35, 0, 35)}
 			}):Play()
 		end)
 		frame.Visible = not frame.Visible
@@ -233,7 +233,7 @@ function Env.new(Logo, Bind)
 	local UICorner_1 = Instance.new("UICorner")
 	local TabScolling_1 = Instance.new("ScrollingFrame")
 	local UIListLayout_2 = Instance.new("UIListLayout")
-	
+
 	Background_1.Name = "Background"
 	Background_1.Parent = lnwza
 	Background_1.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -244,8 +244,8 @@ function Env.new(Logo, Bind)
 	Background_1.Size = UDim2.new(0, 525,0, 375)
 	lak(Background_1)
 	Tog(lnwza, Background_1, Bind, Logo)
-	
-	
+
+
 
 	DropShadow_1.Name = "DropShadow"
 	DropShadow_1.Parent = Background_1
@@ -323,13 +323,13 @@ function Env.new(Logo, Bind)
 	UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
 	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 	UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
-	
+
 	Canvas_X(UIListLayout_2, TabScolling_1, 20)
-	
+
 	local UIPadding_1 = Instance.new("UIPadding")
 	local Line_1 = Instance.new("Frame")
 	local UICorner_2 = Instance.new("UICorner")
-	
+
 	UIPadding_1.Parent = Tabs_1
 	UIPadding_1.PaddingTop = UDim.new(0,2)
 
@@ -344,11 +344,11 @@ function Env.new(Logo, Bind)
 
 	UICorner_2.Parent = Background_1
 	UICorner_2.CornerRadius = UDim.new(0,3)
-	
+
 	Env.Tabs = {
 		Value = false
 	}
-	
+
 	function Env.Tabs:Tab(title)
 		local List_1 = Instance.new("Frame")
 		local Title_1 = Instance.new("TextLabel")
@@ -387,7 +387,7 @@ function Env.new(Logo, Bind)
 		Title_1.Text = title
 		Title_1.TextColor3 = Color3.fromRGB(255,255,255)
 		Title_1.TextSize = 15
-		
+
 		List_1.Size = UDim2.new(0, Title_1.TextBounds.X + 15 ,0, 31)
 
 		Pages_1.Name = "Pages"
@@ -471,10 +471,10 @@ function Env.new(Logo, Bind)
 		UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
 		UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
 		UIListLayout_5.VerticalAlignment = Enum.VerticalAlignment.Center
-		
+
 		Canvas_Y(UIListLayout_3, Left_1, 20)
 		Canvas_Y(UIListLayout_4, Right_1, 20)
-		
+
 		clicktab.MouseButton1Click:Connect(function()
 			for i, v in pairs(Background_1:GetChildren()) do
 				if v.Name ==  "Pages" then
@@ -497,7 +497,7 @@ function Env.new(Logo, Bind)
 				g = {Size = UDim2.new(1, 0,0.882666647, 0)}
 			}):Play()
 		end)
-		
+
 		delay(0.2,function()
 			if not Env.Tabs.Value then
 				Env.Tabs.Value = true
@@ -513,7 +513,7 @@ function Env.new(Logo, Bind)
 				}):Play()
 			end
 		end)
-		
+
 		local function GetSide(side)
 			if not side then
 				return Left_1
@@ -527,9 +527,9 @@ function Env.new(Logo, Bind)
 				return Left_1
 			end
 		end
-		
+
 		local Section = {}
-		
+
 		function Section:Section(t, s)
 
 			local Section = Instance.new("Frame")
@@ -586,15 +586,15 @@ function Env.new(Logo, Bind)
 
 			UICorner_1.Parent = Section
 			UICorner_1.CornerRadius = UDim.new(0,2)
-			
+
 			UIListLayout_1:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 				Section.Size = UDim2.new(0.980000019, 0, 0, UIListLayout_1.AbsoluteContentSize.Y + 10)
 			end)
-			
+
 			local Class = {}
-			
+
 			function Class:Button(title, call)
-				
+
 				local Button = Instance.new("Frame")
 				local UICorner_1 = Instance.new("UICorner")
 				local UIGradient_1 = Instance.new("UIGradient")
@@ -629,7 +629,7 @@ function Env.new(Logo, Bind)
 				TextLabel_1.Text = title
 				TextLabel_1.TextColor3 = Color3.fromRGB(255,255,255)
 				TextLabel_1.TextSize = 14
-				
+
 				cb.MouseButton1Click:Connect(function()
 					for _, v in pairs(Background_1:GetChildren()) do
 						if v.Name == "DropdownB" and v.Visible then
@@ -640,7 +640,7 @@ function Env.new(Logo, Bind)
 					call()
 				end)
 			end
-			
+
 			function Class:Toggle(to, v, c)
 				local Toggle = Instance.new("Frame")
 				local UICorner_1 = Instance.new("UICorner")
@@ -721,7 +721,7 @@ function Env.new(Logo, Bind)
 				TRUE_1.Position = UDim2.new(0.5, 0,0.5, 0)
 				TRUE_1.Size = UDim2.new(0, 0,0, 0)
 				TRUE_1.Image = "rbxassetid://99035215947422"
-				
+
 				local function Togglex(Value)
 					if not Value then 
 						c(Value)
@@ -793,14 +793,14 @@ function Env.new(Logo, Bind)
 
 				Togglex(v)
 			end
-			
+
 			function Class:Dropdown(info)
 				local Title = info.Title
 				local List = info.List or {}
 				local Value = info.Value
 				local Multi = info.Multi or false
 				local Callback = info.Callback
-				
+
 				local Dropdown = Instance.new("Frame")
 				local UICorner_1 = Instance.new("UICorner")
 				local Title_1 = Instance.new("TextLabel")
@@ -868,8 +868,8 @@ function Env.new(Logo, Bind)
 				Desc_1.TextSize = 11
 				Desc_1.TextXAlignment = Enum.TextXAlignment.Left
 				Desc_1.TextTruncate = Enum.TextTruncate.AtEnd
-				
-				
+
+
 				local DropdownB = Instance.new("Frame")
 				local DropShadow_1 = Instance.new("ImageLabel")
 				local Search_1 = Instance.new("Frame")
@@ -974,15 +974,15 @@ function Env.new(Logo, Bind)
 				UIListLayout_1.Parent = ScrollingFrame_1
 				UIListLayout_1.Padding = UDim.new(0,5)
 				UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
-				
+
 				UICorner_3.Parent = DropdownB
 
 				UIStroke_2.Parent = DropdownB
 				UIStroke_2.Color = Color3.fromRGB(25,25,25)
 				UIStroke_2.Thickness = 1
-				
-				
-				
+
+
+
 				local isOpen = false
 				UserInputService.InputBegan:Connect(function(A)
 					if A.UserInputType == Enum.UserInputType.MouseButton1 or A.UserInputType == Enum.UserInputType.Touch then
@@ -1119,7 +1119,7 @@ function Env.new(Logo, Bind)
 					end
 					return false
 				end
-				
+
 				function itemslist:AddList(text)
 					local Items_1 = Instance.new("Frame")
 					local Real_1 = Instance.new("Frame")
@@ -1187,7 +1187,7 @@ function Env.new(Logo, Bind)
 					UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
 					UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 					UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
-					
+
 					ClickList.MouseButton1Click:Connect(function()
 						Update()
 						if Multi then
@@ -1381,14 +1381,14 @@ function Env.new(Logo, Bind)
 						end
 					end)
 				end
-				
+
 				for _, name in ipairs(List) do
 					itemslist:AddList(name)
 				end
 
 				return itemslist
 			end
-			
+
 			function Class:Slider(info)
 				local Title = info.Title
 				local Min = info.Min or 0
@@ -1497,7 +1497,7 @@ function Env.new(Logo, Bind)
 
 				UICorner_4.Parent = Circle_1
 				UICorner_4.CornerRadius = UDim.new(1,0)
-				
+
 				local function roundToDecimal(value, decimals)
 					local factor = 10 ^ decimals
 					return math.floor(value * factor + 0.5) / factor
@@ -1579,9 +1579,9 @@ function Env.new(Logo, Bind)
 					end
 				end)
 			end
-			
+
 			function Class:Textbox(meta)
-				
+
 				local Value = meta.Value or "Example"
 				local ClearOnFocus = meta.ClearOnFocus or false
 				local Callback = meta.Callback
@@ -1622,14 +1622,14 @@ function Env.new(Logo, Bind)
 				Val_1.TextTruncate = Enum.TextTruncate.AtEnd
 				Val_1.TextXAlignment = Enum.TextXAlignment.Center
 				Val_1.ClearTextOnFocus = ClearOnFocus
-				
+
 				Val_1.FocusLost:Connect(function()
 					if #Val_1.Text > 0 then
 						pcall(Callback, Val_1.Text)
 					end
 				end)
 			end
-			
+
 			function Class:Label(t)
 				local Label = Instance.new("Frame")
 				local UICorner_1 = Instance.new("UICorner")
@@ -1663,22 +1663,22 @@ function Env.new(Logo, Bind)
 				Title_1.TextSize = 14
 				Title_1.TextWrapped = true
 				Title_1.TextXAlignment = Enum.TextXAlignment.Left
-				
-				
+
+
 				Title_1.Size = UDim2.new(1, 0,0, Title_1.TextBounds.Y)
 				Label.Size = UDim2.new(0.899999976, 0,0, Title_1.TextBounds.Y + 10)
-				
+
 				local o = {}
-				
+
 				function o:Title(a)
 					Title_1.Text = a
 					Title_1.Size = UDim2.new(1, 0,0, Title_1.TextBounds.Y)
 					Label.Size = UDim2.new(0.899999976, 0,0, Title_1.TextBounds.Y + 5)
 				end
-				
+
 				return o
 			end
-			
+
 			function Class:Line()
 				local Line = Instance.new("Frame")
 				Line.Name = "Line"
@@ -1690,13 +1690,13 @@ function Env.new(Logo, Bind)
 				Line.Position = UDim2.new(0, 0,0, 44)
 				Line.Size = UDim2.new(1, 0,0, 1)
 			end
-			
+
 			return Class
 		end
-		
+
 		return Section
 	end
-	
+
 	return Env.Tabs
 end
 
