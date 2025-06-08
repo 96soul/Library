@@ -1679,6 +1679,18 @@ function Env.new(Logo, Bind)
 				return o
 			end
 			
+			function Class:Line()
+				local Line = Instance.new("Frame")
+				Line.Name = "Line"
+				Line.Parent = Section
+				Line.BackgroundColor3 = Color3.fromRGB(255,255,255)
+				Line.BackgroundTransparency = 0.949999988079071
+				Line.BorderColor3 = Color3.fromRGB(0,0,0)
+				Line.BorderSizePixel = 0
+				Line.Position = UDim2.new(0, 0,0, 44)
+				Line.Size = UDim2.new(1, 0,0, 1)
+			end
+			
 			return Class
 		end
 		
