@@ -178,7 +178,7 @@ Tog = function(p, frame, bn, i)
 	ImageLabel.BorderColor3 = Color3.fromRGB(0,0,0)
 	ImageLabel.BorderSizePixel = 0
 	ImageLabel.Position = UDim2.new(0.5, 0,0.5, 0)
-	ImageLabel.Size = UDim2.new(0, 35,0, 35)
+	ImageLabel.Size = UDim2.new(0, 40,0, 40)
 	ImageLabel.Image = GetIcon(i)
 	ImageLabel.ImageTransparency = 0
 
@@ -488,7 +488,7 @@ function Env.new(Logo, Bind)
 				end
 			end
 			Pages_1.Visible = true
-			Title_1.TextColor3 = Color3.fromRGB(0, 255, 127)
+			Title_1.TextColor3 = Color3.fromRGB(255, 0, 127)
 			tw({
 				v = Pages_1,
 				t = 0.1,
@@ -501,7 +501,7 @@ function Env.new(Logo, Bind)
 		delay(0.2,function()
 			if not Env.Tabs.Value then
 				Env.Tabs.Value = true
-				Title_1.TextColor3 = Color3.fromRGB(0, 255, 127)
+				Title_1.TextColor3 = Color3.fromRGB(255, 0, 127)
 				Pages_1.Visible = true
 				Pages_1.Size = UDim2.new(0, 0,0, 0)
 				tw({
@@ -613,7 +613,7 @@ function Env.new(Logo, Bind)
 				UICorner_1.CornerRadius = UDim.new(0,3)
 
 				UIGradient_1.Parent = Button
-				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 61, 29))}
+				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(85, 0, 43))}
 				UIGradient_1.Rotation = -90
 
 				TextLabel_1.Parent = Button
@@ -708,7 +708,7 @@ function Env.new(Logo, Bind)
 				UICorner_3.CornerRadius = UDim.new(0,3)
 
 				UIGradient_1.Parent = Nocolor_2
-				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 57, 28))}
+				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(93, 0, 47))}
 				UIGradient_1.Rotation = 50
 
 				TRUE_1.Name = "TRUE"
@@ -1170,7 +1170,7 @@ function Env.new(Logo, Bind)
 					Line_1.Name = "Line"
 					Line_1.Parent = Real_1
 					Line_1.AnchorPoint = Vector2.new(0, 0.5)
-					Line_1.BackgroundColor3 = Color3.fromRGB(0,255,127)
+					Line_1.BackgroundColor3 = Color3.fromRGB(255, 0, 127)
 					Line_1.BorderColor3 = Color3.fromRGB(0,0,0)
 					Line_1.BorderSizePixel = 0
 					Line_1.LayoutOrder = -3
@@ -1483,7 +1483,7 @@ function Env.new(Logo, Bind)
 				UICorner_3.Parent = val_1
 
 				UIGradient_1.Parent = val_1
-				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 42, 20))}
+				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(102, 0, 51))}
 				UIGradient_1.Rotation = -90
 
 				Circle_1.Name = "Circle"
