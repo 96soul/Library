@@ -864,7 +864,7 @@ function Env.new(Logo, Bind)
 						Desc_1.Text = Value
 					end
 				end
-				Desc_1.TextColor3 = Color3.fromRGB(0, 255, 127)
+				Desc_1.TextColor3 = Color3.fromRGB(255, 0, 127)
 				Desc_1.TextSize = 11
 				Desc_1.TextXAlignment = Enum.TextXAlignment.Left
 				Desc_1.TextTruncate = Enum.TextTruncate.AtEnd
