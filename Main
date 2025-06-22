@@ -212,6 +212,7 @@ end
 
 local fetching = Instance.new("ScreenGui")
 fetching.Parent = Parent()
+fetching.Name = "lnwza"
 fetching.ZIndexBehavior = Enum.ZIndexBehavior.Global
 fetching.IgnoreGuiInset = true
 
@@ -422,265 +423,270 @@ function Env.new(meta)
 	end
 	
 	do
-		local Key = Instance.new("Frame")
-		local UICorner_1 = Instance.new("UICorner")
-		local Header_1 = Instance.new("Frame")
-		local InsideHeader_1 = Instance.new("Frame")
-		local UIListLayout_1 = Instance.new("UIListLayout")
-		local TextHeader_1 = Instance.new("Frame")
-		local TitleHeader_1 = Instance.new("TextLabel")
-		local UIListLayout_2 = Instance.new("UIListLayout")
-		local DescHeader_1 = Instance.new("TextLabel")
-		local LogoHeader_1 = Instance.new("ImageLabel")
-		local ImageLabel_1 = Instance.new("ImageLabel")
-		local UICorner_2 = Instance.new("UICorner")
-		local UIGradient_1 = Instance.new("UIGradient")
-		local Frame_1 = Instance.new("Frame")
-		local UICorner_3 = Instance.new("UICorner")
-		local UIStroke_1 = Instance.new("UIStroke")
-		local TextBox_1 = Instance.new("TextBox")
-		local DropShadow_1 = Instance.new("ImageLabel")
-		local Frame111_1 = Instance.new("Frame")
-		local TextLabel_1 = Instance.new("TextLabel")
-		local TextButton_1 = Instance.new("TextButton")
-		local pf_1 = Instance.new("ImageLabel")
-		local UICorner_4 = Instance.new("UICorner")
+		if meta.KeyEnabled then
+			local Key = Instance.new("Frame")
+			local UICorner_1 = Instance.new("UICorner")
+			local Header_1 = Instance.new("Frame")
+			local InsideHeader_1 = Instance.new("Frame")
+			local UIListLayout_1 = Instance.new("UIListLayout")
+			local TextHeader_1 = Instance.new("Frame")
+			local TitleHeader_1 = Instance.new("TextLabel")
+			local UIListLayout_2 = Instance.new("UIListLayout")
+			local DescHeader_1 = Instance.new("TextLabel")
+			local LogoHeader_1 = Instance.new("ImageLabel")
+			local ImageLabel_1 = Instance.new("ImageLabel")
+			local UICorner_2 = Instance.new("UICorner")
+			local UIGradient_1 = Instance.new("UIGradient")
+			local Frame_1 = Instance.new("Frame")
+			local UICorner_3 = Instance.new("UICorner")
+			local UIStroke_1 = Instance.new("UIStroke")
+			local TextBox_1 = Instance.new("TextBox")
+			local DropShadow_1 = Instance.new("ImageLabel")
+			local Frame111_1 = Instance.new("Frame")
+			local TextLabel_1 = Instance.new("TextLabel")
+			local TextButton_1 = Instance.new("TextButton")
+			local pf_1 = Instance.new("ImageLabel")
+			local UICorner_4 = Instance.new("UICorner")
 
-		Key.Name = "Key"
-		Key.Parent = fetching
-		Key.AnchorPoint = Vector2.new(0.5, 0.5)
-		Key.BackgroundColor3 = Color3.fromRGB(19,19,19)
-		Key.BorderColor3 = Color3.fromRGB(0,0,0)
-		Key.BorderSizePixel = 0
-		Key.Position = UDim2.new(0.5, 0,0.453691274, 0)
-		Key.Size = UDim2.new(0, 425,0, 151)
-		
-		lak(Key)
+			Key.Name = "Key"
+			Key.Parent = fetching
+			Key.AnchorPoint = Vector2.new(0.5, 0.5)
+			Key.BackgroundColor3 = Color3.fromRGB(19,19,19)
+			Key.BorderColor3 = Color3.fromRGB(0,0,0)
+			Key.BorderSizePixel = 0
+			Key.Position = UDim2.new(0.5, 0,0.453691274, 0)
+			Key.Size = UDim2.new(0, 425,0, 151)
 
-		UICorner_1.Parent = Key
-		UICorner_1.CornerRadius = UDim.new(0,10)
+			lak(Key)
 
-		Header_1.Name = "Header"
-		Header_1.Parent = Key
-		Header_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		Header_1.BackgroundTransparency = 1
-		Header_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		Header_1.BorderSizePixel = 0
-		Header_1.Size = UDim2.new(1, 0,0.735099316, 40)
+			UICorner_1.Parent = Key
+			UICorner_1.CornerRadius = UDim.new(0,10)
 
-		InsideHeader_1.Name = "InsideHeader"
-		InsideHeader_1.Parent = Header_1
-		InsideHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		InsideHeader_1.BackgroundTransparency = 1
-		InsideHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		InsideHeader_1.BorderSizePixel = 0
-		InsideHeader_1.Position = UDim2.new(0.0564705878, 0,6.06309527e-07, 0)
-		InsideHeader_1.Size = UDim2.new(0.943529427, 0,0.6084584, 0)
+			Header_1.Name = "Header"
+			Header_1.Parent = Key
+			Header_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			Header_1.BackgroundTransparency = 1
+			Header_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			Header_1.BorderSizePixel = 0
+			Header_1.Size = UDim2.new(1, 0,0.735099316, 40)
 
-		UIListLayout_1.Parent = InsideHeader_1
-		UIListLayout_1.Padding = UDim.new(0,5)
-		UIListLayout_1.FillDirection = Enum.FillDirection.Horizontal
-		UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
-		UIListLayout_1.VerticalAlignment = Enum.VerticalAlignment.Center
+			InsideHeader_1.Name = "InsideHeader"
+			InsideHeader_1.Parent = Header_1
+			InsideHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			InsideHeader_1.BackgroundTransparency = 1
+			InsideHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			InsideHeader_1.BorderSizePixel = 0
+			InsideHeader_1.Position = UDim2.new(0.0564705878, 0,6.06309527e-07, 0)
+			InsideHeader_1.Size = UDim2.new(0.943529427, 0,0.6084584, 0)
 
-		TextHeader_1.Name = "TextHeader"
-		TextHeader_1.Parent = InsideHeader_1
-		TextHeader_1.AutomaticSize = Enum.AutomaticSize.X
-		TextHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		TextHeader_1.BackgroundTransparency = 1
-		TextHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		TextHeader_1.BorderSizePixel = 0
-		TextHeader_1.Position = UDim2.new(0.089463219, 0,0.0588235296, 0)
-		TextHeader_1.Size = UDim2.new(0, 416,0, 30)
+			UIListLayout_1.Parent = InsideHeader_1
+			UIListLayout_1.Padding = UDim.new(0,5)
+			UIListLayout_1.FillDirection = Enum.FillDirection.Horizontal
+			UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout_1.VerticalAlignment = Enum.VerticalAlignment.Center
 
-		TitleHeader_1.Name = "TitleHeader"
-		TitleHeader_1.Parent = TextHeader_1
-		TitleHeader_1.AutomaticSize = Enum.AutomaticSize.XY
-		TitleHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		TitleHeader_1.BackgroundTransparency = 1
-		TitleHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		TitleHeader_1.BorderSizePixel = 0
-		TitleHeader_1.Position = UDim2.new(0, 0,-0.125, 0)
-		TitleHeader_1.Size = UDim2.new(0, 0,0, 0)
-		TitleHeader_1.Font = Enum.Font.GothamSemibold
-		TitleHeader_1.RichText = true
-		TitleHeader_1.Text = "Fetching's script"
-		TitleHeader_1.TextColor3 = Color3.fromRGB(255,255,255)
-		TitleHeader_1.TextSize = 15
-		TitleHeader_1.TextXAlignment = Enum.TextXAlignment.Left
+			TextHeader_1.Name = "TextHeader"
+			TextHeader_1.Parent = InsideHeader_1
+			TextHeader_1.AutomaticSize = Enum.AutomaticSize.X
+			TextHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			TextHeader_1.BackgroundTransparency = 1
+			TextHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			TextHeader_1.BorderSizePixel = 0
+			TextHeader_1.Position = UDim2.new(0.089463219, 0,0.0588235296, 0)
+			TextHeader_1.Size = UDim2.new(0, 416,0, 30)
 
-		UIListLayout_2.Parent = TextHeader_1
-		UIListLayout_2.Padding = UDim.new(0,2)
-		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-		UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+			TitleHeader_1.Name = "TitleHeader"
+			TitleHeader_1.Parent = TextHeader_1
+			TitleHeader_1.AutomaticSize = Enum.AutomaticSize.XY
+			TitleHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			TitleHeader_1.BackgroundTransparency = 1
+			TitleHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			TitleHeader_1.BorderSizePixel = 0
+			TitleHeader_1.Position = UDim2.new(0, 0,-0.125, 0)
+			TitleHeader_1.Size = UDim2.new(0, 0,0, 0)
+			TitleHeader_1.Font = Enum.Font.GothamSemibold
+			TitleHeader_1.RichText = true
+			TitleHeader_1.Text = "Fetching's script"
+			TitleHeader_1.TextColor3 = Color3.fromRGB(255,255,255)
+			TitleHeader_1.TextSize = 15
+			TitleHeader_1.TextXAlignment = Enum.TextXAlignment.Left
 
-		DescHeader_1.Name = "DescHeader"
-		DescHeader_1.Parent = TextHeader_1
-		DescHeader_1.AutomaticSize = Enum.AutomaticSize.XY
-		DescHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		DescHeader_1.BackgroundTransparency = 1
-		DescHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		DescHeader_1.BorderSizePixel = 0
-		DescHeader_1.Position = UDim2.new(0, 0,-0.125, 0)
-		DescHeader_1.Size = UDim2.new(0, 0,0, 0)
-		DescHeader_1.Font = Enum.Font.GothamMedium
-		DescHeader_1.RichText = true
-		DescHeader_1.Text = "by @96soul"
-		DescHeader_1.TextColor3 = Color3.fromRGB(255,255,255)
-		DescHeader_1.TextSize = 10
-		DescHeader_1.TextTransparency = 0.5
-		DescHeader_1.TextXAlignment = Enum.TextXAlignment.Left
+			UIListLayout_2.Parent = TextHeader_1
+			UIListLayout_2.Padding = UDim.new(0,2)
+			UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
 
-		LogoHeader_1.Name = "LogoHeader"
-		LogoHeader_1.Parent = InsideHeader_1
-		LogoHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		LogoHeader_1.BackgroundTransparency = 1
-		LogoHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		LogoHeader_1.BorderSizePixel = 0
-		LogoHeader_1.LayoutOrder = -1
-		LogoHeader_1.Size = UDim2.new(0, 40,0, 40)
-		LogoHeader_1.Image = "rbxassetid://128185233852701"
+			DescHeader_1.Name = "DescHeader"
+			DescHeader_1.Parent = TextHeader_1
+			DescHeader_1.AutomaticSize = Enum.AutomaticSize.XY
+			DescHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			DescHeader_1.BackgroundTransparency = 1
+			DescHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			DescHeader_1.BorderSizePixel = 0
+			DescHeader_1.Position = UDim2.new(0, 0,-0.125, 0)
+			DescHeader_1.Size = UDim2.new(0, 0,0, 0)
+			DescHeader_1.Font = Enum.Font.GothamMedium
+			DescHeader_1.RichText = true
+			DescHeader_1.Text = "by @96soul"
+			DescHeader_1.TextColor3 = Color3.fromRGB(255,255,255)
+			DescHeader_1.TextSize = 10
+			DescHeader_1.TextTransparency = 0.5
+			DescHeader_1.TextXAlignment = Enum.TextXAlignment.Left
 
-		ImageLabel_1.Parent = Key
-		ImageLabel_1.AnchorPoint = Vector2.new(0.5, 0.5)
-		ImageLabel_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		ImageLabel_1.BackgroundTransparency = 1
-		ImageLabel_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		ImageLabel_1.BorderSizePixel = 0
-		ImageLabel_1.Position = UDim2.new(0.5, 0,0.5, 0)
-		ImageLabel_1.Size = UDim2.new(1, 0,1, 0)
-		ImageLabel_1.Image = "rbxassetid://138127867432976"
-		ImageLabel_1.ScaleType = Enum.ScaleType.Crop
+			LogoHeader_1.Name = "LogoHeader"
+			LogoHeader_1.Parent = InsideHeader_1
+			LogoHeader_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			LogoHeader_1.BackgroundTransparency = 1
+			LogoHeader_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			LogoHeader_1.BorderSizePixel = 0
+			LogoHeader_1.LayoutOrder = -1
+			LogoHeader_1.Size = UDim2.new(0, 40,0, 40)
+			LogoHeader_1.Image = "rbxassetid://128185233852701"
 
-		UICorner_2.Parent = ImageLabel_1
-		UICorner_2.CornerRadius = UDim.new(0,10)
+			ImageLabel_1.Parent = Key
+			ImageLabel_1.AnchorPoint = Vector2.new(0.5, 0.5)
+			ImageLabel_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			ImageLabel_1.BackgroundTransparency = 1
+			ImageLabel_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			ImageLabel_1.BorderSizePixel = 0
+			ImageLabel_1.Position = UDim2.new(0.5, 0,0.5, 0)
+			ImageLabel_1.Size = UDim2.new(1, 0,1, 0)
+			ImageLabel_1.Image = "rbxassetid://138127867432976"
+			ImageLabel_1.ScaleType = Enum.ScaleType.Crop
 
-		UIGradient_1.Parent = ImageLabel_1
-		UIGradient_1.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0,1), NumberSequenceKeypoint.new(0.558604,0.96875), NumberSequenceKeypoint.new(1,0.74375)}
+			UICorner_2.Parent = ImageLabel_1
+			UICorner_2.CornerRadius = UDim.new(0,10)
 
-		Frame_1.Parent = Key
-		Frame_1.BackgroundColor3 = Color3.fromRGB(35,35,35)
-		Frame_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		Frame_1.BorderSizePixel = 0
-		Frame_1.Position = UDim2.new(0.0564705878, 0,0.54885602, 0)
-		Frame_1.Size = UDim2.new(0, 383,0, 31)
-		Frame_1.ZIndex = 2
+			UIGradient_1.Parent = ImageLabel_1
+			UIGradient_1.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0,1), NumberSequenceKeypoint.new(0.558604,0.96875), NumberSequenceKeypoint.new(1,0.74375)}
 
-		UICorner_3.Parent = Frame_1
+			Frame_1.Parent = Key
+			Frame_1.BackgroundColor3 = Color3.fromRGB(35,35,35)
+			Frame_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			Frame_1.BorderSizePixel = 0
+			Frame_1.Position = UDim2.new(0.0564705878, 0,0.54885602, 0)
+			Frame_1.Size = UDim2.new(0, 383,0, 31)
+			Frame_1.ZIndex = 2
 
-		UIStroke_1.Parent = Frame_1
-		UIStroke_1.Color = Color3.fromRGB(60,60,60)
-		UIStroke_1.Thickness = 1
+			UICorner_3.Parent = Frame_1
 
-		TextBox_1.Parent = Frame_1
-		TextBox_1.Active = true
-		TextBox_1.AnchorPoint = Vector2.new(0.5, 0.5)
-		TextBox_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		TextBox_1.BackgroundTransparency = 1
-		TextBox_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		TextBox_1.BorderSizePixel = 0
-		TextBox_1.CursorPosition = -1
-		TextBox_1.Position = UDim2.new(0.5, 0,0.5, 0)
-		TextBox_1.Size = UDim2.new(1, 0,1, 0)
-		TextBox_1.ZIndex = 2
-		TextBox_1.Font = Enum.Font.GothamMedium
-		TextBox_1.PlaceholderColor3 = Color3.fromRGB(178,178,178)
-		TextBox_1.PlaceholderText = "..."
-		TextBox_1.Text = ""
-		TextBox_1.TextColor3 = Color3.fromRGB(149,149,149)
-		TextBox_1.TextSize = 11
-		TextBox_1.TextTruncate = Enum.TextTruncate.AtEnd
+			UIStroke_1.Parent = Frame_1
+			UIStroke_1.Color = Color3.fromRGB(60,60,60)
+			UIStroke_1.Thickness = 1
 
-		DropShadow_1.Name = "DropShadow"
-		DropShadow_1.Parent = Key
-		DropShadow_1.AnchorPoint = Vector2.new(0.5, 0.5)
-		DropShadow_1.BackgroundColor3 = Color3.fromRGB(28,28,30)
-		DropShadow_1.BackgroundTransparency = 1
-		DropShadow_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		DropShadow_1.BorderSizePixel = 0
-		DropShadow_1.Position = UDim2.new(0.5, 0,0.5, 0)
-		DropShadow_1.Size = UDim2.new(1, 150,1, 150)
-		DropShadow_1.ZIndex = 0
-		DropShadow_1.Image = "rbxassetid://8992230677"
-		DropShadow_1.ImageColor3 = Color3.fromRGB(9,14,21)
-		DropShadow_1.ImageTransparency = 0.5
-		DropShadow_1.ScaleType = Enum.ScaleType.Slice
-		DropShadow_1.SliceCenter = Rect.new(100, 100, 100, 100)
+			TextBox_1.Parent = Frame_1
+			TextBox_1.Active = true
+			TextBox_1.AnchorPoint = Vector2.new(0.5, 0.5)
+			TextBox_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			TextBox_1.BackgroundTransparency = 1
+			TextBox_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			TextBox_1.BorderSizePixel = 0
+			TextBox_1.CursorPosition = -1
+			TextBox_1.Position = UDim2.new(0.5, 0,0.5, 0)
+			TextBox_1.Size = UDim2.new(1, 0,1, 0)
+			TextBox_1.ZIndex = 2
+			TextBox_1.Font = Enum.Font.GothamMedium
+			TextBox_1.PlaceholderColor3 = Color3.fromRGB(178,178,178)
+			TextBox_1.PlaceholderText = "..."
+			TextBox_1.Text = ""
+			TextBox_1.TextColor3 = Color3.fromRGB(149,149,149)
+			TextBox_1.TextSize = 11
+			TextBox_1.TextTruncate = Enum.TextTruncate.AtEnd
 
-		Frame111_1.Name = "Frame111"
-		Frame111_1.Parent = Key
-		Frame111_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		Frame111_1.BackgroundTransparency = 1
-		Frame111_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		Frame111_1.BorderSizePixel = 0
-		Frame111_1.Position = UDim2.new(0.0541176461, 0,0.800511658, 0)
-		Frame111_1.Size = UDim2.new(0, 384,0, 20)
+			DropShadow_1.Name = "DropShadow"
+			DropShadow_1.Parent = Key
+			DropShadow_1.AnchorPoint = Vector2.new(0.5, 0.5)
+			DropShadow_1.BackgroundColor3 = Color3.fromRGB(28,28,30)
+			DropShadow_1.BackgroundTransparency = 1
+			DropShadow_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			DropShadow_1.BorderSizePixel = 0
+			DropShadow_1.Position = UDim2.new(0.5, 0,0.5, 0)
+			DropShadow_1.Size = UDim2.new(1, 150,1, 150)
+			DropShadow_1.ZIndex = 0
+			DropShadow_1.Image = "rbxassetid://8992230677"
+			DropShadow_1.ImageColor3 = Color3.fromRGB(9,14,21)
+			DropShadow_1.ImageTransparency = 0.5
+			DropShadow_1.ScaleType = Enum.ScaleType.Slice
+			DropShadow_1.SliceCenter = Rect.new(100, 100, 100, 100)
 
-		TextLabel_1.Parent = Frame111_1
-		TextLabel_1.AnchorPoint = Vector2.new(0.5, 0.5)
-		TextLabel_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		TextLabel_1.BackgroundTransparency = 1
-		TextLabel_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		TextLabel_1.BorderSizePixel = 0
-		TextLabel_1.Position = UDim2.new(0.395833343, 0,0.5, 0)
-		TextLabel_1.Size = UDim2.new(0.791666687, 0,1, 0)
-		TextLabel_1.Font = Enum.Font.Gotham
-		TextLabel_1.Text = "Key require? Join Discord for Key"
-		TextLabel_1.TextColor3 = Color3.fromRGB(255,255,255)
-		TextLabel_1.TextSize = 11
+			Frame111_1.Name = "Frame111"
+			Frame111_1.Parent = Key
+			Frame111_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			Frame111_1.BackgroundTransparency = 1
+			Frame111_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			Frame111_1.BorderSizePixel = 0
+			Frame111_1.Position = UDim2.new(0.0541176461, 0,0.800511658, 0)
+			Frame111_1.Size = UDim2.new(0, 384,0, 20)
 
-		TextButton_1.Parent = Frame111_1
-		TextButton_1.Active = true
-		TextButton_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
-		TextButton_1.BackgroundTransparency = 1
-		TextButton_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		TextButton_1.BorderSizePixel = 0
-		TextButton_1.Position = UDim2.new(0.623052776, 0,0, 0)
-		TextButton_1.Size = UDim2.new(0.168613732, 0,1, 0)
-		TextButton_1.Font = Enum.Font.Gotham
-		TextButton_1.Text = "Click here!"
-		TextButton_1.TextColor3 = Color3.fromRGB(85,170,255)
-		TextButton_1.TextSize = 11
-		TextButton_1.TextXAlignment = Enum.TextXAlignment.Left
+			TextLabel_1.Parent = Frame111_1
+			TextLabel_1.AnchorPoint = Vector2.new(0.5, 0.5)
+			TextLabel_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			TextLabel_1.BackgroundTransparency = 1
+			TextLabel_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			TextLabel_1.BorderSizePixel = 0
+			TextLabel_1.Position = UDim2.new(0.395833343, 0,0.5, 0)
+			TextLabel_1.Size = UDim2.new(0.791666687, 0,1, 0)
+			TextLabel_1.Font = Enum.Font.Gotham
+			TextLabel_1.Text = "Key require? Join Discord for Key"
+			TextLabel_1.TextColor3 = Color3.fromRGB(255,255,255)
+			TextLabel_1.TextSize = 11
 
-		pf_1.Name = "pf"
-		pf_1.Parent = Key
-		pf_1.BackgroundColor3 = Color3.fromRGB(63,63,63)
-		pf_1.BorderColor3 = Color3.fromRGB(0,0,0)
-		pf_1.BorderSizePixel = 0
-		pf_1.LayoutOrder = -1
-		pf_1.Position = UDim2.new(0.863529384, 0,0.165562913, 0)
-		pf_1.Size = UDim2.new(0, 40,0, 40)
-		pf_1.ZIndex = 2
-		pf_1.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+			TextButton_1.Parent = Frame111_1
+			TextButton_1.Active = true
+			TextButton_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			TextButton_1.BackgroundTransparency = 1
+			TextButton_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			TextButton_1.BorderSizePixel = 0
+			TextButton_1.Position = UDim2.new(0.623052776, 0,0, 0)
+			TextButton_1.Size = UDim2.new(0.168613732, 0,1, 0)
+			TextButton_1.Font = Enum.Font.Gotham
+			TextButton_1.Text = "Click here!"
+			TextButton_1.TextColor3 = Color3.fromRGB(85,170,255)
+			TextButton_1.TextSize = 11
+			TextButton_1.TextXAlignment = Enum.TextXAlignment.Left
 
-		UICorner_4.Parent = pf_1
-		UICorner_4.CornerRadius = UDim.new(1,0)
-		
-		TextButton_1.MouseButton1Click:Connect(function()
-			pcall(setclipboard, meta.Discord)
-			Env:Notify({
-				Title = "Clipboard",
-				Desc = "Success: Open invite link",
-				Time = 5
-			})
-		end)
-		
-		TextBox_1.FocusLost:Connect(function()
-			if TextBox_1.Text == meta.Key then
-				TextBox_1.Text = "Authorized: " .. game.Players.LocalPlayer.Name
+			pf_1.Name = "pf"
+			pf_1.Parent = Key
+			pf_1.BackgroundColor3 = Color3.fromRGB(63,63,63)
+			pf_1.BorderColor3 = Color3.fromRGB(0,0,0)
+			pf_1.BorderSizePixel = 0
+			pf_1.LayoutOrder = -1
+			pf_1.Position = UDim2.new(0.863529384, 0,0.165562913, 0)
+			pf_1.Size = UDim2.new(0, 40,0, 40)
+			pf_1.ZIndex = 2
+			pf_1.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+
+			UICorner_4.Parent = pf_1
+			UICorner_4.CornerRadius = UDim.new(1,0)
+
+			TextButton_1.MouseButton1Click:Connect(function()
+				pcall(setclipboard, meta.Discord)
 				Env:Notify({
-					Title = "Authorized Key",
-					Desc = "Success: Now key is Save in your device",
+					Title = "Clipboard",
+					Desc = "Success: Open invite link",
 					Time = 5
 				})
-				wait(2)
-				Key:Destroy()
-				Con = true
-			else
-				return
-			end
-		end)
+			end)
+
+			TextBox_1.FocusLost:Connect(function()
+				if TextBox_1.Text == meta.Key then
+					TextBox_1.Text = "Authorized: " .. game.Players.LocalPlayer.Name
+					Env:Notify({
+						Title = "Authorized Key",
+						Desc = "Success: Now key is Save in your device",
+						Time = 5
+					})
+					wait(2)
+					Key:Destroy()
+					Con = true
+				else
+					return
+				end
+			end)
+		else
+			Con = true
+		end
+		
 	end
 	
 	repeat wait() until Con
@@ -1325,6 +1331,11 @@ function Env.new(meta)
 	local ClickRE = click(Back)
 
 	ClickRE.MouseButton1Click:Connect(function()
+		for _, v in pairs(Background:GetChildren()) do
+			if (v.Name == "Dropdown" and v.Visible) or v.Name == "Window" then
+				return
+			end
+		end
 		for i, v in pairs(Main:GetChildren()) do
 			if string.find(v.Name, "Pages") then
 				v.Visible = false
@@ -1335,8 +1346,8 @@ function Env.new(meta)
 		Back.Visible = false
 		tw({
 			v = Main_Pages,
-			t = 0.1,
-			s = "Linear",
+			t = 0.15,
+			s = "Back",
 			d = "Out",
 			g = {Size = UDim2.new(1, 0,1, 0)}
 		}):Play()
@@ -1565,8 +1576,8 @@ function Env.new(meta)
 			}):Play()
 			tw({
 				v = Pages,
-				t = 0.1,
-				s = "Linear",
+				t = 0.15,
+				s = "Back",
 				d = "Out",
 				g = {Size = UDim2.new(1, 0,1, 0)}
 			}):Play()
@@ -3527,131 +3538,4 @@ function Env.new(meta)
 	return Tabs
 end
 
-local Window = Env.new({
-	Logo = 128185233852701,
-	Title = "Fetching's Official",
-	Desc = "by @96soul",
-	Discord = "aaaaaaaaaa",
-	Key = "1234",
-})
-
-local Tabs = Window:Add({
-	Title = "Geberal",
-	Desc = "Automatic",
-	Icon = 83758878478130
-})
-
-local Tabs2 = Window:Add({
-	Title = "Geberal",
-	Desc = "Automatic",
-	Icon = 83758878478130
-})
-
-local	Sec = Tabs2:Sec({
-	Title = "Sect",
-	Side = "l"
-})
-local	Sec2 = Tabs2:Sec({
-	Title = "Sectionrrrrrrrrrrr",
-	Side = "r"
-})
-
-Sec:Button({
-	Title =  'Button',
-	Callback = function()
-		Window:Dialog({
-			Title = "Hello, " .. game.Players.LocalPlayer.Name,
-			Content = "This is Content Description.",
-			Button = {
-				[1] = {
-					Title = "Allowed",
-					Callback = function()
-						print('d')
-					end,
-				},
-				[2] = {
-					Title = "Deny",
-					Callback = function()
-						print('d2')
-					end,
-				}
-			}
-		})
-	end,
-})
-
---pc 1060
-
-Sec:ToggleImage({
-	Title = "Automatic Dagger",
-	Icon = 77066544764774,
-	Value = false,
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Sec:ButtomImage({
-	Title = "Automatic Dagger",
-	Icon = 77066544764774,
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Sec:Toggle({
-	Title = "Ayrimaruc",
-	Value = true,
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Sec:Dropdown({
-	Title = "Dropdown",
-	Multi = false,
-	List = {"KUY", "EZ"},
-	Value = "KUY",
-	Callback = function(v)
-		print(v)
-	end
-})
-
-Sec2:Dropdown({
-	Title = "Dropdown",
-	Multi = true,
-	List = {"KUY", "EZ"},
-	Value = {"KUY"},
-	Callback = function(v)
-		print(v)
-	end
-})
-
-Sec2:Slider({
-	Title = "Distance",
-	Min = 5,
-	Max = 1000,
-	Value = 15,
-	Rounding = 0,
-	CallBack = function(v)
-		print(v)
-	end,
-})
-
-local as = Sec2:Label('This UI Made by <font color="rgb(134, 211, 255)">96soul</font>\nskdjsdsdsdsd')
-
-task.spawn(function()
-	while task.wait(0.1) do
-		as:Title("Love Love\nNong Khaw")
-		task.wait(0.1)
-		as:Title('This UI Made by <font color="rgb(134, 211, 255)">96soul</font>\nskdjsdsdsdsd')
-	end
-end)
-
-Sec2:Textbox({
-	Value = "Input Box",
-	ClearOnFocus = true,
-	Callback = function(v)
-		print(v)
-	end,
-})
+return Env
