@@ -884,8 +884,6 @@ function Env.new(meta)
 		UserInputService.InputEnded:Connect(EndResize)
 	end
 	
-	
-	
 	Resize(resize, Background)
 
 	UICorner.Parent = Background
@@ -1608,7 +1606,7 @@ function Env.new(meta)
 			UIListLayout.Parent = Section
 			UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-			UIListLayout.Padding = UDim.new(0, 5)
+			UIListLayout.Padding = UDim.new(0, 3)
 
 			TitleSection.Name = "Title"
 			TitleSection.Parent = Section
@@ -3200,7 +3198,6 @@ function Env.new(meta)
 				Title_1.TextSize = 11
 				Title_1.TextWrapped = true
 				Title_1.TextXAlignment = Enum.TextXAlignment.Left
-				Title_1.AutomaticSize = Enum.AutomaticSize.Y
 
 				Title_1.Size = UDim2.new(1, 0,0, Title_1.TextBounds.Y)
 				Label.Size = UDim2.new(0.899999976, 0,0, Title_1.TextBounds.Y + 10)
