@@ -3203,13 +3203,11 @@ function Env.new(meta)
 				Label.Size = UDim2.new(0.899999976, 0,0, Title_1.TextBounds.Y + 10)
 
 				local o = {}
-				
-				Title_1:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
-					Label.Size = UDim2.new(0.899999976, 0,0, Title_1.TextBounds.Y + 5)
-				end)
 
 				function o:Title(a)
 					Title_1.Text = a
+					Title_1.Size = UDim2.new(1, 0,0, Title_1.TextBounds.Y)
+					Label.Size = UDim2.new(0.899999976, 0,0, Title_1.TextBounds.Y + 10)
 				end
 
 				return o
