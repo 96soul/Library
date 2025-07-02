@@ -3166,23 +3166,23 @@ function Env.new(meta)
 			end
 
 			function Class:Label(t)
-				local Label = Instance.new("Frame")
-				local UICorner_1 = Instance.new("UICorner")
+				local Labelx = Instance.new("Frame")
+				local UICorner_1x = Instance.new("UICorner")
 				local Title_1zz = Instance.new("TextLabel")
 
-				Label.Name = "Label"
-				Label.Parent = Section
-				Label.BackgroundColor3 = Color3.fromRGB(255,255,255)
-				Label.BackgroundTransparency = 1
-				Label.BorderColor3 = Color3.fromRGB(0,0,0)
-				Label.BorderSizePixel = 0
-				Label.Size = UDim2.new(0.9, 0,0, 16)
+				Labelx.Name = "Label"
+				Labelx.Parent = Section
+				Labelx.BackgroundColor3 = Color3.fromRGB(255,255,255)
+				Labelx.BackgroundTransparency = 1
+				Labelx.BorderColor3 = Color3.fromRGB(0,0,0)
+				Labelx.BorderSizePixel = 0
+				Labelx.Size = UDim2.new(0.9, 0,0, 16)
 
-				UICorner_1.Parent = Label
-				UICorner_1.CornerRadius = UDim.new(0,3)
+				UICorner_1x.Parent = Labelx
+				UICorner_1x.CornerRadius = UDim.new(0,3)
 
 				Title_1zz.Name = "Title"
-				Title_1zz.Parent = Label
+				Title_1zz.Parent = Labelx
 				Title_1zz.AnchorPoint = Vector2.new(0.5, 0.5)
 				Title_1zz.BackgroundColor3 = Color3.fromRGB(255,255,255)
 				Title_1zz.BackgroundTransparency = 1
@@ -3199,15 +3199,10 @@ function Env.new(meta)
 				Title_1zz.TextWrapped = true
 				Title_1zz.TextXAlignment = Enum.TextXAlignment.Left
 
-				Title_1zz.Size = UDim2.new(1, 0,0, Title_1zz.TextBounds.Y)
-				Label.Size = UDim2.new(0.9, 0,0, Title_1zz.TextBounds.Y + 10)
-
 				local ez = {}
 
 				function ez:Set(gg)
 					Title_1zz.Text = tostring(gg)
-					Title_1zz.Size = UDim2.new(1, 0,0, Title_1zz.TextBounds.Y)
-					Label.Size = UDim2.new(0.9, 0,0, Title_1zz.TextBounds.Y + 10)
 				end
 
 				return ez
