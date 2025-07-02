@@ -3215,7 +3215,7 @@ function Env.new(meta)
 				Title_1zz.TextWrapped = true
 				Title_1zz.TextXAlignment = GetAlig(Side)
 
-				return Title_1zz.Text
+				return Title_1zz
 			end
 
 			function Class:Line()
