@@ -3165,12 +3165,28 @@ function Env.new(meta)
 				end)
 			end
 
+			local function GetAlig(a)
+				if a == 'r' then
+					return Enum.TextXAlignment.Right
+				elseif a == 'l' then
+					return Enum.TextXAlignment.Left
+				elseif a == 'c' then
+					return Enum.TextXAlignment.Center
+				else
+					return Enum.TextXAlignment.Left
+				end
+			end
+
 			function Class:Label(t)
+				
+				local Title = t.Title
+				local Side = t.Side
+				
 				local Labelx = Instance.new("Frame")
 				local UICorner_1x = Instance.new("UICorner")
 				local Title_1zz = Instance.new("TextLabel")
 
-				Labelx.Name = "Label"
+				Labelx.Name = "Labelz"
 				Labelx.Parent = Section
 				Labelx.BackgroundColor3 = Color3.fromRGB(255,255,255)
 				Labelx.BackgroundTransparency = 1
@@ -3181,7 +3197,7 @@ function Env.new(meta)
 				UICorner_1x.Parent = Labelx
 				UICorner_1x.CornerRadius = UDim.new(0,3)
 
-				Title_1zz.Name = "Title"
+				Title_1zz.Name = "Titlez"
 				Title_1zz.Parent = Labelx
 				Title_1zz.AnchorPoint = Vector2.new(0.5, 0.5)
 				Title_1zz.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -3197,12 +3213,19 @@ function Env.new(meta)
 				Title_1zz.TextColor3 = Color3.fromRGB(255,255,255)
 				Title_1zz.TextSize = 11
 				Title_1zz.TextWrapped = true
-				Title_1zz.TextXAlignment = Enum.TextXAlignment.Left
+				Title_1zz.TextXAlignment = GetAlig(Side)
 
 				local ez = {}
-
+				
 				function ez:Set(gg)
-					Title_1zz.Text = tostring(gg)
+					local success, err = pcall(function()
+						Title_1zz.Text = tostring(gg)
+					end)
+					if not success then
+						warn("Failed to set label text:", err)
+					end
+					print(type(gg))
+					print(typeof(gg))
 				end
 
 				return ez
