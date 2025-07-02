@@ -3215,20 +3215,7 @@ function Env.new(meta)
 				Title_1zz.TextWrapped = true
 				Title_1zz.TextXAlignment = GetAlig(Side)
 
-				local ez = {}
-				
-				function ez:Set(gg)
-					local success, err = pcall(function()
-						Title_1zz.Text = tostring(gg)
-					end)
-					if not success then
-						warn("Failed to set label text:", err)
-					end
-					print(type(gg))
-					print(typeof(gg))
-				end
-
-				return ez
+				return Title_1zz.Text
 			end
 
 			function Class:Line()
