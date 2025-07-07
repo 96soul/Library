@@ -149,7 +149,7 @@ Tog = function(p, frame, bn, i)
 	lak(CloseUI)
 
 	UICorner_1z.Parent = CloseUI
-	UICorner_1z.CornerRadius = UDim.new(0,5)
+	UICorner_1z.CornerRadius = UDim.new(0,13)
 
 	Icon_1.Name = "Icon"
 	Icon_1.Parent = CloseUI
