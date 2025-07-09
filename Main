@@ -2306,6 +2306,7 @@ function Env.new(meta)
 				DescTOgle.TextColor3 = Color3.new(0.52549, 0.827451, 1)
 				DescTOgle.TextSize = 10
 				DescTOgle.TextXAlignment = Enum.TextXAlignment.Left
+				DescTOgle.TextTruncate = Enum.TextTruncate.AtEnd
 
 				GG.Name = "GG"
 				GG.Parent = Toggle
@@ -3178,10 +3179,10 @@ function Env.new(meta)
 			end
 
 			function Class:Label(t)
-				
+
 				local Title = t.Title
 				local Side = t.Side
-				
+
 				local Labelx = Instance.new("Frame")
 				local UICorner_1x = Instance.new("UICorner")
 				local Title_1zz = Instance.new("TextLabel")
