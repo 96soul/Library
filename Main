@@ -142,7 +142,7 @@ Tog = function(p, frame, bn, i)
 	CloseUI.BorderColor3 = Color3.fromRGB(0,0,0)
 	CloseUI.BorderSizePixel = 0
 	CloseUI.Position = UDim2.new(0.5, 0,0.2, 0)
-	CloseUI.Size = UDim2.new(0, 50,0, 50)
+	CloseUI.Size = UDim2.new(0, 65,0, 65)
 	CloseUI.BackgroundTransparency = 0
 	CloseUI.Text = ""
 
@@ -763,18 +763,10 @@ function Env.new(meta)
 	resize.Parent = Background
 	resize.AnchorPoint = Vector2.new(1, 1)
 	resize.Size = UDim2.new(0, 40, 0, 40)
-	resize.Position = UDim2.new(1, 30, 1, 30)
+	resize.Position = UDim2.new(1, 10, 1, 10)
 	resize.BackgroundTransparency = 1
 	resize.BorderSizePixel = 0
 	resize.Text = ''
-
-	resize.MouseEnter:Connect(function()
-		UserInputService.MouseIcon = "rbxassetid://84174532888860"
-	end)
-
-	resize.MouseLeave:Connect(function()
-		UserInputService.MouseIcon = ""
-	end)
 
 	local RESIZE_EZ = Instance.new("Frame")
 	local UICorner333 = Instance.new("UICorner")
@@ -846,7 +838,7 @@ function Env.new(meta)
 				newSize = UDim2.new(0, math.max(newSize.X.Offset, 500), 0, math.max(newSize.Y.Offset, 350))
 				tw({
 					v = Frame,
-					t = 0.1,
+					t = 0.01,
 					s = "Linear",
 					d = "Out",
 					g = {Size = newSize}
