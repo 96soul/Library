@@ -840,7 +840,7 @@ function Env.new(meta)
 				newSize = UDim2.new(0, math.max(newSize.X.Offset, 500), 0, math.max(newSize.Y.Offset, 350))
 				tw({
 					v = Frame,
-					t = 0.01,
+					t = 0,
 					s = "Linear",
 					d = "Out",
 					g = {Size = newSize}
